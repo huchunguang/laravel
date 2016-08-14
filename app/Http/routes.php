@@ -9,6 +9,19 @@
 | and give it the controller to call when that URI is requested.
 |
 */
+use App\Entity\Member;
+Route::get('member',function(){
+	return Member::all();
+});
+
+Route::get('testmodel',function(){
+	$user=new App\User();
+	return $user->userTest();
+});
+Route::get('components/{num}',function($num){
+	return view('compon'.$num);
+});
+Route::get('alipay',['as'=>'paytest','uses'=>'PayController@alipay']);
 Route::get('testResponse',function (){
 	$content='hello laravel';
 	$status=200;
