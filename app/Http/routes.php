@@ -13,7 +13,9 @@ use App\Entity\Member;
 Route::get('member',function(){
 	return Member::all();
 });
-
+Route::get('/',function(){
+	return view('master');
+});
 Route::get('testmodel',function(){
 	$user=new App\User();
 	return $user->userTest();
@@ -48,7 +50,6 @@ Route::get('gethome',function (){
 });
 Route::controller('request','RequestController');
 Route::resource('post','PostController');
-Route::get('/', 'WelcomeController@index');
 Route::get('/age/refuse/',['as'=>'refuse',function(){
 	return "18岁以上男子才能访问！";
 }]);
