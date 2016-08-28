@@ -8,5 +8,5 @@
 * @Description:
 *
  ************************************************************************/
-echo 'this is a test huchunguang';
+echo 'this is a test huchunguang beta02';
 
