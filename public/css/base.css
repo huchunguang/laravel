@@ -1,0 +1,22 @@
+@CHARSET "UTF-8";
+.header li{
+	width:280px;
+	height:40px;
+	line-height:30px;
+	border:1px solid red;	
+	float:left;
+	display:inline-block;
+	clear:right;
+}
+.header{
+	display:block;
+	
+}
+.header ul{
+	width:80%;
+	margin:0 auto;
+	height:45px;
+	border:1px solid red;
+	display:block;
+}
+
