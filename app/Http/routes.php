@@ -20,6 +20,7 @@ Route::get('testmodel',function(){
 });
 Route::get('components/{num}',function($num){
 	return view('compon'.$num);
+	
 });
 Route::get('alipay',['as'=>'paytest','uses'=>'PayController@alipay']);
 Route::get('testResponse',function (){
