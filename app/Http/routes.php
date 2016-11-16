@@ -14,6 +14,9 @@ Route::get('member',function(){
 	return Member::all();
 });
 Route::get('/',function(){
+    xdebug_disable();
+    echo '4556';die;
+    return '123123';
 	return view('master');
 });
 Route::get('testmodel',function(){
